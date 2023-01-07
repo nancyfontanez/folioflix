@@ -707,6 +707,8 @@
     }
     .banner-right-con::before {
         top: 26%;
+        left: 85px;
+        z-index: 10;
     }
     .banner-main-con {
         padding-top: 30px;
@@ -915,7 +917,7 @@
         margin: 0;
     }
     .portfolio-img-con .filterDiv:nth-child(3) {
-        padding: 0 25px;
+        padding: 0;
     }
     .portfolio-img-con .filterDiv:last-child {
         margin-bottom: 60px;
@@ -989,7 +991,7 @@
         padding: 0 15px;
     }
     .testimonials-content figure {
-      position: relative;
+        position: relative;
     }
     .testimonials-inner-content {
         margin-left: 0;
@@ -1029,8 +1031,9 @@
         width: 30px;
         height: 30px;
         background-size: contain;
-        left: 59px;
-    top: 12%;
+        left: 48px;
+        top: 12%;
+        z-index: 1;
     }
     .blog-model-con .blog-box-item{
         width: 100%;
