@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;800&family=Lato&display=swap');
+:root {
+   --primary: #3f396d;
+   --secondary: rgba(250, 250, 250, 0.8);
+   --tertiary: #FF9800;
+}
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: var(--secondary);
+}
+body {
+    scroll-behavior: smooth;
+    background: #6F34FE;
+    background: -webkit-linear-gradient(to top, #6F34FE 0%, #FF9800 100%);
+    background: -moz-linear-gradient(to top, #6F34FE 0%, #FF9800 100%);
+    background: linear-gradient(to top, #6F34FE 0%, #FF9800 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.linksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+    width: 360px;
+}
+.linksImageContainer {
+    align-self: center;
+    margin: 30px 0 18px 0;
+}
+.profileImage {
+    border-radius: 50%;
+    width: 150px;
+}
+span {
+    font-size: 30px;
+    color: var(--tertiary);
+}
+h1 {
+    font-size: 34.5px;
+    letter-spacing: 1px;
+    margin: 15px 0 -10px;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: .5px;
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+}
+p, h3 {
+    font-weight: 500;
+}
+p {
+    font-size: 18px;
+}
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    
+}
+li {
+    display: inline;
+}
+.linksSocialMedia {
+    text-align: center;
+}
+hr {
+    width: 350px;
+    margin-inline-start: 0;
+    border: 1px solid var(--secondary);
+    
+}
+.icons {
+    font-size: 32px;
+    color: var(--secondary);
+    padding: 10px;
+    border: 1px solid var(--primary);
+    width: 30px;  
+    border-radius: 8px;
+}
+.icons:hover, span:hover {
+    transform: scale(1.05);
+    background-color: var(--primary);
+}
+.portfolioButton {
+    margin: 18px 0;
+    text-align: center;
+}
+.portfolioLink {
+    padding: 15px 120px 10px !important;
+}
+.whiteButtons {
+    margin: 30px 0 35px 0;
+    text-align: center;
+}
+.buttonsLinks {
+    text-decoration: none;
+    color: var(--primary);
+    background-color: var(--secondary);
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    font-size: 19px;
+    letter-spacing: .5px;
+    padding: 15px 82px 10px;
+}
+.buttonsLinks:hover {
+    transform: scale(1.01);
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+footer {
+    margin: 25px;
+}

@@ -1,0 +1,882 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 90em;
+  margin: 0 auto;
+  padding: 3em 10em;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-auto-rows: minmax(auto);
+  grid-gap: 15px;
+}
+
+.box-1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-bottom: 3em;
+}
+.box-1 span {
+  grid-column: 1/6;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.box-2 {
+  grid-column: 3/10;
+  grid-row: 1/2;
+}
+.box-2 nav {
+  display: block;
+  padding-top: 0.9em;
+  text-align: center;
+}
+.box-2 a {
+  text-decoration: none;
+  color: #000000;
+  margin: 0 1em;
+}
+.box-2 a:is(:hover, :focus, :active) {
+  font-weight: 600;
+  border-bottom: 4px solid #982c06;
+}
+
+.box-3 {
+  grid-column: 10/13;
+  grid-row: 1/2;
+  text-align: right;
+}
+.box-3 button {
+  color: #ffffff;
+  border-radius: 0.5em;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+  background: #982c06;
+  padding: 1em 1.5em;
+}
+.box-3 button:hover {
+  transform: translateY(1px);
+  filter: opacity(95%);
+}
+
+.box-4 {
+  grid-column: 1/7;
+  margin-bottom: 5em;
+}
+.box-4 h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  margin-top: 2em;
+  line-height: 1.4em;
+}
+.box-4 span {
+  color: #987519;
+}
+.box-4 p {
+  padding: 2.75em 0;
+  line-height: 2em;
+}
+.box-4 button {
+  color: #ffffff;
+  border-radius: 0.5em;
+  border: none;
+  background: #982c06;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  padding: 1em 2em;
+}
+.box-4 button:hover {
+  transform: translateY(1px);
+  filter: opacity(95%);
+}
+
+.box-5 {
+  grid-column: 7/11;
+  grid-row: 2/3;
+  padding-top: 4.25em;
+  height: 400px;
+}
+.box-5 img {
+  width: 17.5em;
+  height: 30em;
+}
+.box-5 .brush-gold {
+  position: relative;
+  top: -440px;
+  left: -30px;
+  width: 100%;
+  height: 350px;
+  z-index: -1;
+}
+
+.box-6 {
+  grid-column: 11/13;
+  grid-row: 2/3;
+  margin-top: 6em;
+  text-align: left;
+}
+.box-6 i {
+  background: #ffffff;
+  color: #982c06;
+  font-size: 1.25em;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 0.7em;
+}
+.box-6 span {
+  display: inline-table;
+}
+.box-6 .info-top {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.box-6 .info-bottom {
+  font-size: 0.6em;
+  font-weight: 300;
+}
+
+.box-7 {
+  background: #ffffff;
+  grid-column: 1/13;
+  border-radius: 1em;
+  padding: 2em;
+  margin-bottom: 7em;
+}
+.box-7 .search-bar {
+  display: inline-block;
+  padding-right: 6em;
+}
+.box-7 h6 {
+  font-weight: 700;
+  padding: 0.25em;
+}
+.box-7 select {
+  font-size: 0.9em;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  padding: 1em 3.2em 0 0;
+}
+.box-7 button {
+  color: #ffffff;
+  border-radius: 0.5em;
+  border: none;
+  background: #987519;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  padding: 1em 2em;
+}
+.box-7 button:hover {
+  transform: translateY(1px);
+  filter: opacity(95%);
+}
+.box-7 i {
+  padding-right: 0.5em;
+}
+
+.box-8 {
+  grid-column: 1/10;
+  margin-bottom: 2em;
+}
+.box-8 h2 {
+  font-size: 3em;
+  font-weight: 700;
+  padding-bottom: 0.5em;
+}
+
+.box-9 {
+  grid-column: 10/13;
+  text-align: right;
+}
+.box-9 i {
+  border-radius: 999em;
+  padding: 1em;
+  margin: 0.3em;
+}
+.box-9 .fa-arrow-left {
+  border: 0.01em solid #efefef;
+  color: #6f7376;
+}
+.box-9 .fa-arrow-right {
+  background: #982c06;
+  color: #ffffff;
+}
+
+.box-10 {
+  grid-column: 1/13;
+  margin-bottom: 8em;
+}
+.box-10 .recently-cards {
+  display: inline-block;
+  background: #ffffff;
+  border-radius: 1em;
+  padding: 0.8em;
+  width: 22.4em;
+  height: 27em;
+}
+.box-10 img {
+  width: 100%;
+  height: 12.0625em;
+  border-radius: 1em;
+}
+.box-10 h3 {
+  font-weight: 700;
+  padding: 1em 0;
+}
+.box-10 p {
+  font-size: 0.8em;
+  font-weight: 300;
+  padding-bottom: 2em;
+}
+.box-10 .card-price {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.box-10 button {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+  color: #7aa189;
+  background: transparent;
+  border: 0.2em solid #7aa189;
+  border-radius: 0.6em;
+  padding: 0.5em 1em;
+  margin-left: 7.6em;
+}
+.box-10 button:hover {
+  background: #7aa189;
+  color: #ffffff;
+}
+.box-10 .card-bids-left, .box-10 .card-bids-right {
+  position: relative;
+  font-size: 0.8em;
+  top: 3em;
+}
+.box-10 .card-bids-left {
+  font-weight: 700;
+}
+.box-10 .card-bids-right {
+  color: #b2b3b5;
+  left: 6.6em;
+}
+.box-10 .card-middle, .box-10 .card-right {
+  background: transparent;
+  border: 0.1em solid #f1efef;
+}
+.box-10 .margin {
+  margin-right: 0.9em;
+}
+
+.box-11 {
+  grid-column: 1/10;
+  margin-bottom: 2em;
+}
+.box-11 h2 {
+  font-size: 3em;
+  font-weight: 700;
+  padding-bottom: 0.5em;
+}
+
+.box-12 {
+  grid-column: 10/13;
+  text-align: right;
+}
+.box-12 i {
+  border-radius: 999em;
+  padding: 1em;
+  margin: 0.3em;
+}
+.box-12 .fa-arrow-left {
+  border: 0.01em solid #efefef;
+  color: #6f7376;
+}
+.box-12 .fa-arrow-right {
+  background: #982c06;
+  color: #ffffff;
+}
+
+.box-13 {
+  grid-column: 1/4;
+}
+.box-13 .top-card {
+  border-radius: 1.5em;
+  background: #8d8b8b;
+  padding: 1.8em;
+  box-shadow: inset 0 0 7em 0 #000000;
+}
+.box-13 span {
+  font-weight: 500;
+  color: #982c06;
+  background: #ffffff;
+  padding: 0.2em 0.8em;
+  border-radius: 2em;
+  filter: drop-shadow(0 0.5em 0.5rem #292929);
+}
+.box-13 h4, .box-13 p {
+  color: #ffffff;
+}
+.box-13 h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-top: 6.2em;
+}
+.box-13 p {
+  font-size: 0.8em;
+  padding-top: 0.8em;
+}
+.box-13 .top-card {
+  background-image: url(/assets/image/victorian-weapon.jpg);
+  background-size: cover;
+}
+
+.box-14 {
+  grid-column: 1/4;
+}
+.box-14 .top-card {
+  border-radius: 1.5em;
+  background: #8d8b8b;
+  padding: 1.8em;
+  box-shadow: inset 0 0 7em 0 #000000;
+}
+.box-14 span {
+  font-weight: 500;
+  color: #982c06;
+  background: #ffffff;
+  padding: 0.2em 0.8em;
+  border-radius: 2em;
+  filter: drop-shadow(0 0.5em 0.5rem #292929);
+}
+.box-14 h4, .box-14 p {
+  color: #ffffff;
+}
+.box-14 h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-top: 6.2em;
+}
+.box-14 p {
+  font-size: 0.8em;
+  padding-top: 0.8em;
+}
+.box-14 .top-card {
+  background-image: url(/assets/image/bull-skull.jpg);
+  background-repeat: round;
+}
+
+.box-15 {
+  grid-column: 4/8;
+  grid-row: 7/9;
+}
+.box-15 .top-card {
+  border-radius: 1.5em;
+  background: #8d8b8b;
+  padding: 1.8em;
+  box-shadow: inset 0 0 7em 0 #000000;
+}
+.box-15 span {
+  font-weight: 500;
+  color: #982c06;
+  background: #ffffff;
+  padding: 0.2em 0.8em;
+  border-radius: 2em;
+  filter: drop-shadow(0 0.5em 0.5rem #292929);
+}
+.box-15 h4, .box-15 p {
+  color: #ffffff;
+}
+.box-15 h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-top: 6.2em;
+}
+.box-15 p {
+  font-size: 0.8em;
+  padding-top: 0.8em;
+}
+.box-15 .top-card {
+  width: 22.8em;
+  height: 34.6em;
+  background-image: url(/assets/image/greek-statue.jpg);
+  background-size: cover;
+}
+.box-15 h4 {
+  font-size: 2em;
+  padding-top: 13.1em;
+}
+.box-15 p {
+  font-size: 0.9em;
+}
+
+.box-16 {
+  grid-column: 8/13;
+  grid-row: 7/8;
+}
+.box-16 .top-card {
+  border-radius: 1.5em;
+  background: #8d8b8b;
+  padding: 1.8em;
+  box-shadow: inset 0 0 7em 0 #000000;
+}
+.box-16 span {
+  font-weight: 500;
+  color: #982c06;
+  background: #ffffff;
+  padding: 0.2em 0.8em;
+  border-radius: 2em;
+  filter: drop-shadow(0 0.5em 0.5rem #292929);
+}
+.box-16 h4, .box-16 p {
+  color: #ffffff;
+}
+.box-16 h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-top: 6.2em;
+}
+.box-16 p {
+  font-size: 0.8em;
+  padding-top: 0.8em;
+}
+.box-16 .top-card {
+  background-image: url(/assets/image/swedish-keep.jpg);
+  background-repeat: round;
+}
+
+.box-17 {
+  grid-column: 8/10;
+  grid-row: 8/9;
+  display: inline-block;
+}
+.box-17 .top-card {
+  border-radius: 1.5em;
+  background: #8d8b8b;
+  padding: 1.8em;
+  box-shadow: inset 0 0 7em 0 #000000;
+}
+.box-17 span {
+  font-weight: 500;
+  color: #982c06;
+  background: #ffffff;
+  padding: 0.2em 0.8em;
+  border-radius: 2em;
+  filter: drop-shadow(0 0.5em 0.5rem #292929);
+}
+.box-17 h4, .box-17 p {
+  color: #ffffff;
+}
+.box-17 h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-top: 6.2em;
+}
+.box-17 p {
+  font-size: 0.8em;
+  padding-top: 0.8em;
+}
+.box-17 .top-card {
+  background-image: url(/assets/image/antique-watch.jpg);
+  background-size: cover;
+  width: 11em;
+  height: 16.9em;
+}
+
+.box-18 {
+  grid-column: 10/13;
+  grid-row: 8/9;
+}
+.box-18 .top-card {
+  border-radius: 1.5em;
+  background: #8d8b8b;
+  padding: 1.8em;
+  box-shadow: inset 0 0 7em 0 #000000;
+}
+.box-18 span {
+  font-weight: 500;
+  color: #982c06;
+  background: #ffffff;
+  padding: 0.2em 0.8em;
+  border-radius: 2em;
+  filter: drop-shadow(0 0.5em 0.5rem #292929);
+}
+.box-18 h4, .box-18 p {
+  color: #ffffff;
+}
+.box-18 h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-top: 6.2em;
+}
+.box-18 p {
+  font-size: 0.8em;
+  padding-top: 0.8em;
+}
+.box-18 .top-card {
+  background-image: url(/assets/image/islamic-etagere.jpg);
+  background-repeat: round;
+  width: 17em;
+  height: 16.9em;
+}
+
+.box-19 {
+  grid-column: 1/5;
+  grid-row: 9/11;
+  padding-top: 5em;
+}
+.box-19 .angel-statue {
+  width: 375px;
+  height: 460px;
+}
+.box-19 .brush-gold-bottom {
+  position: relative;
+  top: -450px;
+  left: 50px;
+  width: 100%;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+.box-20 {
+  grid-column: 5/13;
+  grid-row: 9/10;
+  padding: 12em 0 0 5em;
+}
+.box-20 h2 {
+  color: #2d3134;
+  font-size: 2em;
+  font-weight: 600;
+}
+.box-20 p {
+  color: #6f7376;
+  padding-top: 1.5em;
+  line-height: 1.8em;
+}
+
+.box-21 {
+  grid-column: 5/13;
+  grid-row: 10/11;
+  padding-left: 5em;
+  margin-top: -14em;
+}
+.box-21 span {
+  display: flex;
+  flex-direction: column;
+}
+.box-21 .feedback-name {
+  font-weight: 600;
+  line-height: 1.5em;
+}
+.box-21 .feedback-position {
+  color: #6f7376;
+  font-weight: 300;
+}
+.box-21 i {
+  padding-top: 0.9em;
+  color: #982c06;
+}
+
+.box-22 {
+  grid-column: 1/13;
+  background: #987519;
+  color: #ffffff;
+  border-radius: 1em;
+  padding: 3.5em;
+  margin: -10em 2em 2em 2em;
+  height: 280px;
+}
+.box-22 h2 {
+  font-size: 2em;
+  font-weight: 600;
+}
+.box-22 p {
+  font-size: 0.8em;
+  font-weight: 300;
+  letter-spacing: 0.07em;
+  padding-top: 1em;
+  line-height: 1.5em;
+}
+.box-22 form {
+  padding-top: 2em;
+}
+.box-22 input {
+  border: none;
+  border-radius: 0.7em;
+  padding: 1.2em;
+  width: 29em;
+}
+.box-22 i {
+  color: #ffffff;
+}
+.box-22 button {
+  background: #982c06;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.6em;
+  margin-left: -3.2em;
+}
+.box-22 span {
+  position: relative;
+  top: -27em;
+  left: 39em;
+}
+.box-22 img {
+  width: 250px;
+  height: 530px;
+}
+
+.box-23, .box-24, .box-25, .box-26 {
+  margin: 6em 0 2em 2em;
+}
+.box-23 h5, .box-24 h5, .box-25 h5, .box-26 h5 {
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+.box-23 a, .box-24 a, .box-25 a, .box-26 a {
+  display: flex;
+  flex-direction: column;
+  color: #6f7376;
+  font-size: 0.8em;
+  text-decoration: none;
+  padding-top: 1.6em;
+}
+
+.box-23 {
+  grid-column: 1/4;
+}
+
+.box-24 {
+  grid-column: 4/7;
+}
+
+.box-25 {
+  grid-column: 7/10;
+}
+
+.box-26 {
+  grid-column: 10/13;
+}
+.box-26 p {
+  font-size: 0.9em;
+  color: #6f7376;
+  line-height: 1.5em;
+  padding-top: 1.2em;
+}
+.box-26 a {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #7aa189;
+}
+
+.box-27 {
+  grid-column: 1/13;
+  margin: 0 2em;
+}
+.box-27 hr {
+  background: #f1efef;
+  padding: 0.07em;
+  border: none;
+}
+
+.box-28 {
+  grid-column: 1/3;
+  margin: 2em;
+}
+.box-28 span {
+  grid-column: 1/6;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.box-29 {
+  grid-column: 3/10;
+  margin: 2em 0 0 6.5em;
+}
+.box-29 nav {
+  display: block;
+  padding-top: 0.9em;
+  text-align: center;
+}
+.box-29 a {
+  text-decoration: none;
+  color: #000000;
+  margin: 0 1em;
+}
+.box-29 a:is(:hover, :focus, :active) {
+  font-weight: 600;
+  border-bottom: 4px solid #982c06;
+}
+.box-29 nav {
+  font-size: 0.91em;
+}
+
+.box-30 {
+  grid-column: 10/13;
+  margin: 1.2em 0 1em 4em;
+  display: flex;
+  flex-direction: row;
+}
+.box-30 i {
+  border-radius: 999em;
+  color: #b2b3b5;
+  padding: 1em;
+  margin: 0.3em;
+}
+.box-30 .fa-facebook-f, .box-30 .fa-instagram, .box-30 .fa-twitter {
+  border: 0.01em solid #efefef;
+}
+.box-30 .fa-facebook-f {
+  padding: 1em 1.2em;
+}
+.box-30 .fa-facebook-f:hover, .box-30 .fa-instagram:hover, .box-30 .fa-twitter:hover {
+  color: #982c06;
+  border: 0.01em solid #982c06;
+}
+/*# sourceMappingURL=main.css.map */
