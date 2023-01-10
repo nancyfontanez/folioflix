@@ -125,5 +125,5 @@ hr {
     padding: 15px 70px 10px;
 }
 footer {
-    margin: 25px;
+    margin: 25px !important;
 }
