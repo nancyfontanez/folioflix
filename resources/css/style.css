@@ -123,6 +123,7 @@ hr {
 }
 .journalButton {
     padding: 15px 70px 10px;
+    margin-bottom: 25px;
 }
 .footer {
     margin: 25px !important;
