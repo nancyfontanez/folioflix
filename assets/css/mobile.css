@@ -920,7 +920,7 @@
         margin: 0;
     }
     .portfolio-img-con .filterDiv:nth-child(3) {
-        padding: 0;
+        padding: 0 16px;
     }
     .portfolio-img-con .filterDiv:last-child {
         margin-bottom: 60px;
