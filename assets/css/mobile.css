@@ -654,6 +654,9 @@
     .blog-img img{
         float: left;
         margin: 20px 29px 20px 20px;
+        width: 350px;
+        height: 250px;
+        border-radius: 16px;
     }
     .blog-content p {
         margin-bottom: 25px;
