@@ -119,15 +119,24 @@ hr {
     background-color: var(--primary);
     color: var(--secondary);
 }
-.instaclubButton {
-    padding: 15px 78px 10px;
+.featuredButtonTwo {
+    padding: 15px 6px 10px;
 }
-.journalButton {
-    padding: 15px 70px 10px;
+.featuredButtonThree {
+    padding: 15px 5px 10px;
+}
+.featuredButtonFour {
+    padding: 15px 7px 10px;
+}
+.featuredButtonFive {
+    padding: 15px 72px 10px;
     margin-bottom: 125px;
 }
+.featuredButtonSix {
+    padding: 15px 71px 10px;
+}
 .footer {
-    margin: 25px !important;
+    margin: 50px !important;
 }
 
 @media only screen and (max-width: 375px){
