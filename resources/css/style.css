@@ -44,7 +44,7 @@ span {
 h1 {
     font-size: 34.5px;
     letter-spacing: 1px;
-    margin: 15px 0 -10px;
+    margin: 15px 0;
 }
 h2 {
     text-align: center;
@@ -53,7 +53,7 @@ h3 {
     font-size: 20px;
     text-align: center;
     letter-spacing: .5px;
-    padding: 15px;
+    padding: 17px 15px 15px;
     margin: 5px 0;
     border: 1px solid var(--secondary);
     border-radius: 8px;
@@ -130,7 +130,6 @@ hr {
 }
 .featuredButtonFive {
     padding: 15px 72px 10px;
-    margin-bottom: 125px;
 }
 .featuredButtonSix {
     padding: 15px 71px 10px;
