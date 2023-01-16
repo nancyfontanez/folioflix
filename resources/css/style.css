@@ -129,3 +129,10 @@ hr {
 .footer {
     margin: 25px !important;
 }
+
+@media only screen and (max-width: 375px){
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
