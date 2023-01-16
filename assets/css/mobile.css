@@ -1115,5 +1115,8 @@
         position: absolute;
         right: 34px;
         top: 0;
-    }  
+    } 
+    .portfolio-img-con .filterDiv:nth-child(3) {
+        padding: 0;
+    }
 }
