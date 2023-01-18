@@ -6,16 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curio</title>
     <link rel="stylesheet" href="/curio/css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
     <script
       src="https://kit.fontawesome.com/6dba53c399.js"
       crossorigin="anonymous"
     ></script>
+
     <!-- Hotjar Tracking Code for https://nancyfontanez.dev/ -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -32,6 +27,7 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
+    <!-- Hotjar Tracking Code for https://nancyfontanez.dev/ -->
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -47,69 +43,69 @@
 
       gtag("config", "G-H5VSXCB906");
     </script>
+    <!-- Google tag (gtag.js) -->
   </head>
-
+    
   <body>
     <div class="container">
       <div class="wrapper">
+        <!-- Nav Section -->
         <div class="box-1">
           <span>Curio</span>
         </div>
         <div class="box-2">
-          <nav>
-            <a href="#">Home</a>
-            <a href="#">Collections</a>
-            <a href="#">How We Collect</a>
-            <a href="#">Sell An Antique</a>
-            <a href="#">Blog</a>
+          <nav class="nav-bar">
+            <ul class="nav-menu">
+              <li class="nav-item nav-margin-top"><a href="#">Home</a></li>
+              <li class="nav-item"><a href="#">Recently Added</a></li>
+              <li class="nav-item"><a href="#">Top Categories</a></li>
+              <li class="nav-item"><a href="#">Feedback</a></li>
+              <li class="nav-item nav-margin-bottom"><a href="#">Resources</a></li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
           </nav>
         </div>
         <div class="box-3">
-          <button>Our Collections</button>
+          <a href="#subcribe"><button>Subscribe</button></a>
         </div>
+        <!-- Nav Section -->
+
+        <!-- Header Section -->
         <div class="box-4">
-          <h1>World's Biggest<br /><span>Antique Collection</span></h1>
-          <p>
-            Based in the Chicago area, we have been trading in and selling
-            antiques since 1989. We pride ourselves on providing the highest
-            quality items and the best customer services. Browse our exciting
-            range of products.
-          </p>
+          <h1>World's Biggest<br><span>Antique Collection</span></h1>
+          <p>Based in the Chicago area, we have been trading in and selling antiques since 1989. We pride ourselves on providing the highest quality items and the best customer services. Browse our exciting range of products.</p>
           <button>Discover Now</button>
         </div>
         <div class="box-5">
-          <img src="/assets/image/chinese-archaic.jpg" alt="" />
-          <img
-            class="brush-gold"
-            src="/assets/image/brush-gold-color.png"
-            alt=""
-          />
+            <img src="/assets/image/chinese-vase.png" alt="">
+            <img class="brush-gold" src="/assets/image/brush-gold-color.png" alt=""> 
         </div>
         <div class="box-6">
-          <div>
+          <div class="icons">
             <i class="fa-solid fa-calendar-plus"></i>
-            <span class="info-top"
-              >1322<br /><span class="info-bottom">Year</span></span
-            >
+            <span class="info-top">1322<br><span class="info-bottom">Year</span></span>
           </div>
-          <div>
+          <div class="icons">
             <i class="fa-solid fa-trophy"></i>
-            <span class="info-top"
-              >29<br /><span class="info-bottom">Bids so far</span></span
-            >
+            <span class="info-top">29<br><span class="info-bottom">Bids so far</span></span>
           </div>
-          <div>
+          <div class="icons">
             <i class="fa-solid fa-city"></i>
-            <span class="info-top"
-              >China<br /><span class="info-bottom">Origin</span></span
-            >
+            <span class="info-top">China<br><span class="info-bottom">Origin</span></span>
           </div>
         </div>
+        <!-- Header Section -->
+
+        <!-- Search Section -->
         <div class="box-7">
           <div class="search-bar">
             <h6>Location</h6>
             <form>
-              <select>
+              <select class="location">
                 <option>Norway</option>
                 <option>Norway</option>
                 <option>Norway</option>
@@ -121,7 +117,7 @@
           <div class="search-bar">
             <h6>Religion</h6>
             <form>
-              <select>
+              <select class="religion">
                 <option>Asatro</option>
                 <option>Asatro</option>
                 <option>Asatro</option>
@@ -133,7 +129,7 @@
           <div class="search-bar">
             <h6>Year</h6>
             <form>
-              <select>
+              <select class="year">
                 <option>793 AD</option>
                 <option>793 AD</option>
                 <option>793 AD</option>
@@ -145,7 +141,7 @@
           <div class="search-bar">
             <h6>Type</h6>
             <form>
-              <select>
+              <select class="weapons">
                 <option>Weapons</option>
                 <option>Weapons</option>
                 <option>Weapons</option>
@@ -156,8 +152,11 @@
           </div>
           <button><i class="fa-solid fa-magnifying-glass"></i>Search</button>
         </div>
+        <!-- Search Section -->
+
+        <!-- Recently Added Section -->
         <div class="box-8">
-          <h2>Recently Added</h2>
+          <h2 id="recently-added">Recently Added</h2>
           <p>Browse our exciting range of recently added products.</p>
         </div>
         <div class="box-9">
@@ -166,39 +165,44 @@
         </div>
         <div class="box-10">
           <div class="recently-cards margin">
-            <img src="/assets/image/turkish-rug.jpg" alt="" />
-            <h3>Turkish Tribal Southwestern Runner Rug</h3>
+            <img src="/assets/image/turkish-rug.jpg" alt="">
+            <h3>Turkish Tribal Southwestern Runner</h3>
             <p>Year 1952 | Rugs & Carpets</p>
             <span class="card-price">$399.50</span>
             <button>View Details</button>
-            <br />
+            <br>
             <span class="card-bids-left">14 bids so far</span>
             <span class="card-bids-right">Bidding Closes in 12 Days</span>
           </div>
           <div class="recently-cards card-middle margin">
-            <img src="/assets/image/chinese-archaic.jpg" alt="" />
+            <img src="/assets/image/chinese-archaic.jpg" alt="">
             <h3>Chinese Archaic-stylish Wine Vessel</h3>
             <p>Year 1965 | Asian Antiques</p>
             <span class="card-price">$891.50</span>
             <button>View Details</button>
-            <br />
+            <br>
             <span class="card-bids-left">32 bids so far</span>
             <span class="card-bids-right">Bidding Closes in 12 Days</span>
           </div>
           <div class="recently-cards card-right">
-            <img src="/assets/image/islamic-ottoman.jpg" alt="" />
-            <h3>Islamic Goat Statue Ottoman</h3>
+            <img src="/assets/image/islamic-ottoman.jpg" alt="">
+            <h3>Islamic Goat Statue Ottoman Seat</h3>
             <p>Year 1765 | Statues</p>
             <span class="card-price">$410.50</span>
             <button>View Details</button>
-            <br />
+            <br>
             <span class="card-bids-left">15 bids so far</span>
             <span class="card-bids-right">Bidding Closes in 12 Days</span>
           </div>
         </div>
+        <!-- Recently Added Section -->
+
+        <!-- Top Categories Section -->
         <div class="box-11">
           <h2>Top Categories</h2>
-          <p>Browse our exciting range of top categories.</p>
+          <p>
+            Browse our exciting range of top categories.
+          </p>
         </div>
         <div class="box-12">
           <i class="fa-solid fa-arrow-left"></i>
@@ -206,9 +210,9 @@
         </div>
         <div class="box-13">
           <div class="top-card">
-            <span>122</span>
-            <h4>Weapons</h4>
-            <p>Worefall</p>
+              <span>122</span>
+              <h4>Weapons</h4>
+              <p>Worefall</p>
           </div>
         </div>
         <div class="box-14">
@@ -246,29 +250,20 @@
             <p>Worefall</p>
           </div>
         </div>
+        <!-- Top Categories Section -->
+
+        <!-- Feedback Section -->
         <div class="box-19">
-          <img
-            class="angel-statue"
-            src="/assets/image/angel-statue.png"
-            alt=""
-          />
-          <img
-            class="brush-gold-bottom"
-            src="/assets/image/brush-gold-color.png"
-            alt=""
-          />
+          <img class="angel-statue" src="/assets/image/angel-statue.png" alt="">
+          <img class="brush-gold-bottom" src="/assets/image/brush-gold-color.png" alt="">
         </div>
         <div class="box-20">
           <h2>Buyer's Feedback</h2>
-          <p>
-            Highly recommend buying from Curio, or even popping in just to
-            browse some of the incredible items in stock. Peter is an expert of
-            his craft in all things antique, vintage and random. I've purchased
-            on multiple occasions and will be back time and time again.
+          <p>Highly recommend buying from Curio, or even popping in just to browse some of the incredible items in stock. Peter is an expert of his craft in all things antique, vintage and random. I've purchased on multiple occasions and will be back time and time again.
           </p>
         </div>
         <div class="box-21">
-          <img src="" alt="" />
+          <img src="" alt="">
           <span class="feedback-name">Cameron Diaz</span>
           <span class="feedback-position">Actress</span>
           <i class="fa-solid fa-star"></i>
@@ -277,22 +272,23 @@
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
         </div>
+        <!-- Feedback Section -->
+
+        <!-- Subscribe Section -->
         <div class="box-22">
-          <h2>Subscribe our newsletter</h2>
-          <p>
-            Receive latest news, update, and many other things<br />every week
-          </p>
-          <form>
-            <input type="email" placeholder="Enter your email address" />
-            <button><i class="fa-solid fa-paper-plane"></i></button>
-          </form>
-          <span>
-            <img
-              src="/assets/image/graphophone-with-base.png"
-              alt=""
-            />
-          </span>
+            <h2>Subscribe our newsletter</h2>
+            <p>Receive latest news, update, and many other things<br>every week</p>
+            <form>
+              <input type="email" placeholder="Enter your email address">
+              <button><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+            <span>
+              <img src="/assets/image/graphophone-with-base.png" alt="">
+            </span>
         </div>
+        <!-- Subscribe Section -->
+
+        <!-- Footer Section -->
         <div class="box-23">
           <h5>Resources</h5>
           <a href="#">Download</a>
@@ -316,11 +312,11 @@
         </div>
         <div class="box-26">
           <h5>Get In Touch</h5>
-          <p>Feel free to get in touch us <br />via email</p>
+          <p>Feel free to get in touch us <br>via email</p>
           <a href="mailto:hello@curio.com">hello@curio.com</a>
         </div>
         <div class="box-27">
-          <hr />
+          <hr>
         </div>
         <div class="box-28">
           <span>Curio</span>
@@ -328,10 +324,10 @@
         <div class="box-29">
           <nav>
             <a href="#">Home</a>
-            <a href="#">Collections</a>
-            <a href="#">How We Collect</a>
-            <a href="#">Sell An Antique</a>
-            <a href="#">Blog</a>
+            <a href="#">Recently Added</a>
+            <a href="#">Top Categories</a>
+            <a href="#">Feedback</a>
+            <a href="#">Resources</a>
           </nav>
         </div>
         <div class="box-30">
@@ -339,7 +335,9 @@
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-twitter"></i>
         </div>
+        <!-- Footer Section -->
       </div>
     </div>
+    <script src="/curio/js/script.js"></script>
   </body>
 </html>

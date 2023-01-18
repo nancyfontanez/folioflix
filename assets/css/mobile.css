@@ -12,6 +12,8 @@
         right: -39px;
     }
 }
+
+
 @media only screen and (max-width: 1199px){
     h1 {
         font-size: 74px;

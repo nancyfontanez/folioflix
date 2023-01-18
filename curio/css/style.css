@@ -164,19 +164,24 @@ body {
   margin-bottom: 3em;
 }
 .box-1 span {
-  grid-column: 1/6;
   font-size: 2em;
   font-weight: 700;
 }
 
 .box-2 {
-  grid-column: 3/10;
+  grid-column: 3/11;
   grid-row: 1/2;
 }
 .box-2 nav {
-  display: block;
-  padding-top: 0.9em;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding: 0.9em;
+}
+.box-2 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .box-2 a {
   text-decoration: none;
@@ -187,9 +192,19 @@ body {
   font-weight: 600;
   border-bottom: 4px solid #982c06;
 }
-
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 1.5625em;
+  height: 0.1875em;
+  margin: 0.3125em;
+  background-color: #000000;
+}
 .box-3 {
-  grid-column: 10/13;
+  grid-column: 11/13;
   grid-row: 1/2;
   text-align: right;
 }
@@ -209,6 +224,7 @@ body {
 
 .box-4 {
   grid-column: 1/7;
+  grid-row: 2/3;
   margin-bottom: 5em;
 }
 .box-4 h1 {
@@ -269,7 +285,7 @@ body {
   background: #ffffff;
   color: #982c06;
   font-size: 1.25em;
-  margin: 1em;
+  margin: 0.5em;
   padding: 1em;
   border-radius: 0.7em;
 }
@@ -474,7 +490,7 @@ body {
   padding-top: 0.8em;
 }
 .box-13 .top-card {
-  background-image: url(/curio-landing-page/images/victorian-weapon.jpg);
+  background-image: url(/assets/image/victorian-weapon.jpg);
   background-size: cover;
 }
 
@@ -508,7 +524,7 @@ body {
   padding-top: 0.8em;
 }
 .box-14 .top-card {
-  background-image: url(/curio-landing-page/images/bull-skull.jpg);
+  background-image: url(/assets/image/bull-skull.jpg);
   background-repeat: round;
 }
 
@@ -545,7 +561,7 @@ body {
 .box-15 .top-card {
   width: 22.8em;
   height: 34.6em;
-  background-image: url(/curio-landing-page/images/greek-statue.jpg);
+  background-image: url(/assets/image/greek-statue.jpg);
   background-size: cover;
 }
 .box-15 h4 {
@@ -587,10 +603,16 @@ body {
   padding-top: 0.8em;
 }
 .box-16 .top-card {
-  background-image: url(/curio-landing-page/images/swedish-keep.jpg);
+  background-image: url(/assets/image/swedish-keep.jpg);
   background-repeat: round;
 }
-
+.box-16 .top-card, .box-17 .top-card {
+  margin-left: 1.7em;
+}
+.box-18 .top-card {
+  width: 12.8em;
+  margin-left: 2.6em;
+}
 .box-17 {
   grid-column: 8/10;
   grid-row: 8/9;
@@ -623,14 +645,13 @@ body {
   padding-top: 0.8em;
 }
 .box-17 .top-card {
-  background-image: url(/curio-landing-page/images/antique-watch.jpg);
+  background-image: url(/assets/image/antique-watch.jpg);
   background-size: cover;
   width: 11em;
   height: 16.9em;
 }
-
 .box-18 {
-  grid-column: 10/13;
+  grid-column: 10/12;
   grid-row: 8/9;
 }
 .box-18 .top-card {
@@ -660,9 +681,9 @@ body {
   padding-top: 0.8em;
 }
 .box-18 .top-card {
-  background-image: url(/curio-landing-page/images/islamic-etagere.jpg);
+  background-image: url(/assets/image/islamic-etagere.jpg);
   background-repeat: round;
-  width: 17em;
+  width: 12.8em;
   height: 16.9em;
 }
 
@@ -765,7 +786,7 @@ body {
 .box-22 span {
   position: relative;
   top: -27em;
-  left: 39em;
+  left: 85%;
 }
 .box-22 img {
   width: 250px;
@@ -789,19 +810,19 @@ body {
 }
 
 .box-23 {
-  grid-column: 1/4;
+  grid-column: 1/3;
 }
 
 .box-24 {
-  grid-column: 4/7;
+  grid-column: 3/6;
 }
 
 .box-25 {
-  grid-column: 7/10;
+  grid-column: 6/9;
 }
 
 .box-26 {
-  grid-column: 10/13;
+  grid-column: 9/13;
 }
 .box-26 p {
   font-size: 0.9em;
@@ -826,7 +847,7 @@ body {
 }
 
 .box-28 {
-  grid-column: 1/3;
+  grid-column: 1 / 2;
   margin: 2em;
 }
 .box-28 span {
@@ -836,7 +857,7 @@ body {
 }
 
 .box-29 {
-  grid-column: 3/10;
+  grid-column: 2 / 10;
   margin: 2em 0 0 6.5em;
 }
 .box-29 nav {
@@ -856,9 +877,8 @@ body {
 .box-29 nav {
   font-size: 0.91em;
 }
-
 .box-30 {
-  grid-column: 10/13;
+  grid-column: 10 / 13;
   margin: 1.2em 0 1em 4em;
   display: flex;
   flex-direction: row;
@@ -880,3 +900,497 @@ body {
   border: 0.01em solid #982c06;
 }
 /*# sourceMappingURL=main.css.map */
+
+@media only screen and (max-width: 1450px){
+  .box-1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .box-2 {
+    grid-column: 3/11;
+    grid-row: 1/2;
+  }
+  .icons {
+    margin-left: -1em;
+  }
+  .box-7 .search-bar {
+    padding-right: 8.9%;
+  }
+  .box-10 .margin {
+    margin-right: 0.5em;
+  }
+}
+@media only screen and (max-width: 1199px){
+  .box-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .box-2 {
+    grid-column: 2 / 12 !important;
+    grid-row: 1 / 2;
+    margin-left: -2.5em;
+  }
+  .box-4 {
+    grid-column: 1 / 8;
+    grid-row: 2 / 3;
+  }
+  .box-4 h1 {
+    font-size: 3em;
+  }
+  .box-5 {
+    grid-column: 9 / 13;
+    grid-row: 2 / 3;
+  }
+  .box-6 {
+    display: none;
+  }
+  .box-7 .search-bar {
+    padding-right: 2em;
+  }
+  .recently-cards {
+    width: 17.4em !important;
+  }
+  .box-10 button {
+    margin-left: 2em !important;
+  }
+  .box-10 .card-bids-right {
+    left: 0.7em;
+  }
+  .top-card{
+    width: 17em;
+    height: 16.9em;
+  }
+  .box-15 {
+    grid-column: 4 / 8;
+    grid-row: 7 / 8;
+  }
+  .box-15 .top-card {
+    width: 17em;
+    height: 16.9em;
+    margin-left: 1.5em;
+  }
+  .box-15 h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-top: 6.2em;
+  }
+  .box-16 {
+    grid-column: 4 / 8;
+    grid-row: 8 / 9;
+  }
+  .box-16 .top-card {
+    margin-left: 1.5em !important;
+  }
+  .box-17 {
+    grid-column: 8 / 13;
+    grid-row: 7 / 8;
+  }
+  .box-17 .top-card {
+    width: 17em;
+    height: 16.9em;
+    margin-left: 3em;
+  }
+  .box-18 {
+    grid-column: 8 / 13;
+    grid-row: 8 / 9;
+  }
+  .box-18 .top-card {
+    width: 17em;
+    margin-left: 3em;
+  }
+  .box-22 {
+    margin-top: -10em;
+  }
+  .box-22 span {
+    left: 34em !important;
+  }
+  .box-23 {
+    grid-column: 1 / 3;
+  }
+  .box-24 {
+    grid-column: 3 / 6;
+  }
+  .box-25 {
+    grid-column: 6 / 9;
+  }
+  .box-26 {
+    grid-column: 9 / 12;
+  }
+  .box-28 {
+    grid-column: 1 / 2;
+    margin: 2em 1em;
+  }
+  .box-29 {
+    grid-column: 2 / 10;
+    margin: 2em 0;
+  }
+  .box-29 a {
+    margin: 0 0.5em;
+  }
+  .box-30 {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 60em;
+    margin: 0;
+    padding: 3em 1.7em;
+  }
+  .box-2 {
+    grid-column: 12 / 13 !important;
+    grid-row: 1 / 2;
+    margin-left: 0;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(0.5em) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-0.5em) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    background-color: #987519;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    text-align: center;
+    margin: 1em 0;
+  }
+  .nav-margin-top {
+    margin-top: 5em;
+  }
+  .nav-margin-bottom {
+    margin-bottom: 5em;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .box-3 {
+  display: none;
+  }
+  .box-4 {
+    grid-column: 1/8;
+    grid-row: 2/3;
+  }
+  .box-4 h1 {
+    font-size: 3em;
+  }
+  .box-5 {
+    grid-column: 9/13;
+    grid-row: 2/3;
+  }
+  .box-6 {
+    display: none;
+  }
+  .box-7 .search-bar {
+    padding-right: 2.7em;
+  }
+  .recently-cards {
+    width: 18.3em !important;
+  }
+  .top-card, .box-15 .top-card, .box-17 .top-card, .box-18 .top-card  {
+    width: 18em;
+  }
+  .box-15 .top-card, .box-16 .top-card {
+    margin-left: 1.6em;
+  }
+  .box-22 {
+    margin: -10em 0 2em 0;
+  }
+  .box-22 span {
+    left: 78% !important;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .box-4 {
+    grid-column: 1 / 7;
+  }
+  .box-5 {
+    grid-column: 7 / 12;
+  }
+  .box-7 .search-bar {
+    padding-right: 1.1em;
+  }
+  .box-7 select {
+    padding: 1em 2em 0 0;
+  }
+  .box-7 button {
+    padding: 0.8em;
+  }
+  .recently-cards {
+    width: 14em !important;
+  }
+  .box-10 .card-price {
+    margin-left: 2em;
+  }
+  .box-10 button {
+    margin: 1em 0 0 2.5em !important;
+  }
+  .box-10 .card-bids-left, .box-10 .card-bids-right {
+    display: none;
+  }
+  .top-card, .box-15 .top-card, .box-17 .top-card, .box-18 .top-card {
+    width: 14.5em;
+  }
+  .box-15 .top-card, .box-16 .top-card {
+    margin-left: 0.3em !important;
+  }
+  .box-21 .feedback-name {
+    margin-top: 3.5em;
+  }
+  .box-22 {
+    text-align: center;
+  }
+  .box-22 span {
+    display: none;
+  }
+  .box-23 {
+    grid-column: 1 / 3;
+  }
+  .box-24 {
+    grid-column: 3 / 6;
+  }
+  .box-25 {
+    grid-column: 6 / 9;
+  }
+  .box-26 {
+    grid-column: 9 / 12;
+  }
+  .box-29 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 575px){
+    .box-4 {
+      grid-column: 1 / 13;
+      grid-row: 2 / 3;
+      text-align: center;
+    }
+    .box-4 h1 {
+      margin-top: 1em;
+    }
+    .box-5 {
+      display: none;
+    }
+    .box-7 {
+      display: flex;
+      flex-direction: column;
+    }
+    .box-7 .search-bar {
+      padding-bottom: 1em;
+    }
+    .box-7 select {
+      padding-bottom: 1em;
+    }
+    body > div > div > div.box-7 > div:nth-child(1) > form > select {
+      padding-right: 79% !important;
+    }
+    body > div > div > div.box-7 > div:nth-child(2) > form > select {
+      padding-right: 82% !important;
+    }
+    body > div > div > div.box-7 > div:nth-child(3) > form > select {
+      padding-right: 81% !important;
+    }
+    body > div > div > div.box-7 > div:nth-child(4) > form > select {
+      padding-right: 75% !important;
+    }
+    .box-10 .card-right {
+      display: none;
+    }
+    .recently-cards {
+      width: 47% !important;;
+    }
+    .box-13, .box-14 {
+      grid-column: 1 / 6;
+    }
+    .box-15, .box-16 {
+      grid-column: 7 / 13;
+    }
+    .top-card {
+      width: 110% !important;
+    }
+    .box-15 .top-card, .box-16 .top-card {
+      width: 110% !important;
+      margin-left: -0.7em !important;
+    }
+    .box-17, .box-18 {
+      display: none;
+    }
+    .box-19 .angel-statue, .box-19 .brush-gold-bottom {
+      display: none;
+    }
+    .box-20 {
+      grid-column: 1 / 13;
+      text-align: center;
+      margin-top: -4em;
+      padding-left: 0;
+    }
+    .box-21 {
+      grid-column: 1 / 13;
+      text-align: center;
+      margin-top: 1em;
+      padding-left: 0;
+    }
+    .box-21 .feedback-name {
+      margin-top: 0.5em;
+    }
+    .box-22 {
+      margin: 2em 0;
+    }
+    .box-23 {
+      grid-column: 1 / 3;
+    }
+    .box-24 {
+      grid-column: 3 / 6;
+      margin-left: 1em;
+    }
+    .box-25 {
+      grid-column: 6 / 9;
+      margin-left: 0.5em;
+    }
+    .box-26 {
+      grid-column: 9 / 13;
+      margin-left: 2em;
+    }
+    .box-26 a {
+      font-size: 0.8em;
+    }
+    .box-28 {
+      grid-column: 1 / 6;
+    }
+    .box-30 {
+      grid-column: 8 / 11;
+    }
+}
+
+@media only screen and (max-width: 450px){
+  .box-4 h1 {
+    font-size: 2.4em;
+  }
+  .box-8 {
+    grid-column: 1 / 7;
+    font-size: 0.9em;
+  }
+  .box-9 {
+    grid-column: 7 / 13;
+  }
+  .box-10 {
+    margin-bottom: 6em;
+  }
+  .recently-cards {
+    width: 100% !important;
+    height: 24em !important;
+    margin-bottom: 1em;
+  }
+  .box-10 .card-price {
+    margin-left: 0;
+  }
+  .box-10 button {
+    margin-left: 9em !important;
+  }
+  .box-11 {
+    grid-column: 1 / 7;
+    font-size: 0.9em;
+  }
+  .box-12 {
+    grid-column: 7 / 13;
+  }
+  .box-13, .box-14 {
+    grid-column: 1 / 13;
+  }
+  .box-13 .top-card, .box-14 .top-card {
+    width: 100% !important;
+  }
+  .box-15, .box-16 {
+    display: none;
+  }
+  .box-22 {
+    margin-top: 5em;
+    padding: 2em;
+  }
+  .box-22 input {
+    width: 95%;
+  }
+  .box-23 {
+    grid-column: 1 / 4;
+  }
+  .box-24 {
+    display: none;
+    
+  }
+  .box-25 {grid-column: 4 / 9;
+    margin-left: 0;
+    
+  }
+  .box-26 h5 {
+    width: 100% !important;
+  }
+  .box-26 {
+    grid-column: 9 / 13;
+    margin-left: 0;
+  }
+  .box-28 {
+    grid-column: 1 / 6;
+  }
+  .box-30 {
+    grid-column: 6 / 13;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .box-8 h2, .box-11 h2 {
+    font-size: 2.3em;
+  }
+  body > div > div > div.box-10 > div.recently-cards.card-middle.margin {
+    height: 24em !important;
+  }
+  body > div > div > div.box-10 > div:nth-child(1) > button {
+    margin-left: 4.8em !important;
+  }
+  body > div > div > div.box-10 > div.recently-cards.card-middle.margin > button {
+    margin-left: 5em !important;
+  }
+  .box-10 .card-middle {
+    height: 25em !important;
+  }
+  .box-22 {
+    padding: 2.8em;
+  }
+  .box-22 form {
+    padding-top: 0.3em;
+  }
+  .box-23 {
+    grid-column: 1 / 6;
+  }
+  .box-25 {
+    display: none;
+  }
+  .box-26 {
+    grid-column: 6 / 13;
+  }
+  .box-28 {
+    grid-column: 1 / 4;
+  }
+  .box-30 {
+    grid-column: 4 / 12;
+  }
+}
