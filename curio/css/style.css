@@ -903,21 +903,57 @@ body {
 
 @media only screen and (max-width: 1450px){
   .box-1 {
-    grid-column: 1/3;
+    grid-column: 1/2;
     grid-row: 1/2;
   }
   .box-2 {
-    grid-column: 3/11;
+    grid-column: 2/11;
     grid-row: 1/2;
+  }
+  .box-2 .nav-bar {
+    font-size: 85%;
+    margin-left: 2%;
   }
   .icons {
     margin-left: -1em;
   }
-  .box-7 .search-bar {
-    padding-right: 8.9%;
+  .box-6 .icons {
+    font-size: 70%;
   }
-  .box-10 .margin {
-    margin-right: 0.5em;
+  .box-7 {
+    text-align: center;
+  }
+  .box-7 .search-bar {
+    padding-right: 4%;
+  }
+  .box-10 .recently-cards {
+    width: 31.5%;
+  }
+  .box-10 button {
+    margin-left: 10%;
+  }
+  .box-10 .card-bids-left {
+    font-size: 75%;
+  }
+  .box-10 .card-bids-right {
+    left: 5%;
+    font-size: 75%;
+  }
+  .box-13 .top-card, .box-14 .top-card, .box-15 .top-card, .box-16 .top-card {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  .box-17 .top-card {
+    width: 125%;
+    margin-left: 0;
+  }
+  .box-18 .top-card {
+    width: 130%;
+    margin-left: 25%;
+  }
+  .box-29 {
+    font-size: 85%;
+    margin-left: 2%;
   }
 }
 @media only screen and (max-width: 1199px){
@@ -928,7 +964,8 @@ body {
   .box-2 {
     grid-column: 2 / 12 !important;
     grid-row: 1 / 2;
-    margin-left: -2.5em;
+    width: 90% !important;
+    font-size: 75%;
   }
   .box-4 {
     grid-column: 1 / 8;
@@ -946,18 +983,29 @@ body {
   }
   .box-7 .search-bar {
     padding-right: 2em;
+    font-size: 90%;
   }
-  .recently-cards {
-    width: 17.4em !important;
+  .box-7 button {
+    margin-top: 5%;
+    width: 95%;
+  }
+  .box-10 .card-bids-right {
+    display: none;
+  }
+  .box-10 .recently-cards {
+    width: 31.1%;
   }
   .box-10 button {
-    margin-left: 2em !important;
+    width: 40%;
+    margin-left: 20%;
+  }
+  .box-10 .card-price {
+    font-size: 102%;
   }
   .box-10 .card-bids-right {
     left: 0.7em;
   }
-  .top-card{
-    width: 17em;
+  .top-card {
     height: 16.9em;
   }
   .box-15 {
@@ -965,7 +1013,6 @@ body {
     grid-row: 7 / 8;
   }
   .box-15 .top-card {
-    width: 17em;
     height: 16.9em;
     margin-left: 1.5em;
   }
@@ -978,31 +1025,29 @@ body {
     grid-column: 4 / 8;
     grid-row: 8 / 9;
   }
-  .box-16 .top-card {
-    margin-left: 1.5em !important;
-  }
   .box-17 {
-    grid-column: 8 / 13;
+    grid-column: 8 / 12;
     grid-row: 7 / 8;
   }
   .box-17 .top-card {
-    width: 17em;
-    height: 16.9em;
-    margin-left: 3em;
+    width: 100%;
   }
   .box-18 {
-    grid-column: 8 / 13;
+    grid-column: 8 / 12;
     grid-row: 8 / 9;
   }
   .box-18 .top-card {
-    width: 17em;
-    margin-left: 3em;
+    width: 100%;
+    margin-left: 0.1%;
+  }
+  .box-21 {
+    margin-top: -9em;
   }
   .box-22 {
-    margin-top: -10em;
-  }
-  .box-22 span {
-    left: 34em !important;
+    width: 100%;
+    margin-top: -5em;
+    margin-left: 0;
+    margin-right: 0;
   }
   .box-23 {
     grid-column: 1 / 3;
@@ -1022,10 +1067,11 @@ body {
   }
   .box-29 {
     grid-column: 2 / 10;
-    margin: 2em 0;
+    margin: 2.5em 0;
+    font-size: 80%;
   }
   .box-29 a {
-    margin: 0 0.5em;
+    margin: 0 0.1em;
   }
   .box-30 {
     margin-left: 0;
@@ -1096,23 +1142,20 @@ body {
     grid-column: 9/13;
     grid-row: 2/3;
   }
+  .box-5 img {
+    width: 100%;
+  }
   .box-6 {
     display: none;
-  }
-  .box-7 .search-bar {
-    padding-right: 2.7em;
-  }
-  .recently-cards {
-    width: 18.3em !important;
-  }
-  .top-card, .box-15 .top-card, .box-17 .top-card, .box-18 .top-card  {
-    width: 18em;
   }
   .box-15 .top-card, .box-16 .top-card {
     margin-left: 1.6em;
   }
   .box-22 {
-    margin: -10em 0 2em 0;
+    margin: -8em 0 2em 0;
+  }
+  .box-22 img {
+    width: 36%;
   }
   .box-22 span {
     left: 78% !important;
@@ -1127,36 +1170,40 @@ body {
     grid-column: 7 / 12;
   }
   .box-7 .search-bar {
-    padding-right: 1.1em;
-  }
-  .box-7 select {
-    padding: 1em 2em 0 0;
+    font-size: 75%;
+    padding-right: 1%;
   }
   .box-7 button {
     padding: 0.8em;
   }
   .recently-cards {
-    width: 14em !important;
+    width: 32% !important;
   }
-  .box-10 .card-price {
-    margin-left: 2em;
+  .box-10 .margin {
+    margin-right: 0 !important;
   }
   .box-10 button {
-    margin: 1em 0 0 2.5em !important;
+    width: 100%;
+    margin: 1em 0 0 0;
   }
   .box-10 .card-bids-left, .box-10 .card-bids-right {
     display: none;
   }
   .top-card, .box-15 .top-card, .box-17 .top-card, .box-18 .top-card {
-    width: 14.5em;
+    width: 100%;
   }
   .box-15 .top-card, .box-16 .top-card {
     margin-left: 0.3em !important;
   }
-  .box-21 .feedback-name {
-    margin-top: 3.5em;
+  .box-19 img {
+    width: 90% !important;
+  }
+  .box-20, .box-21 {
+    padding-left: 1.5em;
+    font-size: 85%;
   }
   .box-22 {
+    margin: 1em;
     text-align: center;
   }
   .box-22 span {
@@ -1164,15 +1211,19 @@ body {
   }
   .box-23 {
     grid-column: 1 / 3;
+    font-size: 75%;
   }
   .box-24 {
     grid-column: 3 / 6;
+    font-size: 75%;
   }
   .box-25 {
     grid-column: 6 / 9;
+    font-size: 75%;
   }
   .box-26 {
     grid-column: 9 / 12;
+    font-size: 75%;
   }
   .box-29 {
     display: none;
@@ -1201,6 +1252,12 @@ body {
     .box-7 select {
       padding-bottom: 1em;
     }
+    .box-8 {
+      grid-column: 1/7;
+    }
+    .box-9 {
+      grid-column: 7/13;
+    }
     body > div > div > div.box-7 > div:nth-child(1) > form > select {
       padding-right: 79% !important;
     }
@@ -1215,6 +1272,12 @@ body {
     }
     .box-10 .card-right {
       display: none;
+    }
+    .box-11 {
+      grid-column: 1/7;
+    }
+    .box-12 {
+      grid-column: 7/13;
     }
     .recently-cards {
       width: 47% !important;;
@@ -1256,6 +1319,9 @@ body {
     .box-22 {
       margin: 2em 0;
     }
+    .box-22 input {
+      width: 80%;
+    }
     .box-23 {
       grid-column: 1 / 3;
     }
@@ -1278,7 +1344,7 @@ body {
       grid-column: 1 / 6;
     }
     .box-30 {
-      grid-column: 8 / 11;
+      grid-column: 7 / 10;
     }
 }
 
@@ -1304,9 +1370,6 @@ body {
   .box-10 .card-price {
     margin-left: 0;
   }
-  .box-10 button {
-    margin-left: 9em !important;
-  }
   .box-11 {
     grid-column: 1 / 7;
     font-size: 0.9em;
@@ -1327,15 +1390,11 @@ body {
     margin-top: 5em;
     padding: 2em;
   }
-  .box-22 input {
-    width: 95%;
-  }
   .box-23 {
     grid-column: 1 / 4;
   }
   .box-24 {
     display: none;
-    
   }
   .box-25 {grid-column: 4 / 9;
     margin-left: 0;
@@ -1360,14 +1419,11 @@ body {
   .box-8 h2, .box-11 h2 {
     font-size: 2.3em;
   }
-  body > div > div > div.box-10 > div.recently-cards.card-middle.margin {
-    height: 24em !important;
+  .box-10 .recently-cards {
+    height: 25em !important;
   }
-  body > div > div > div.box-10 > div:nth-child(1) > button {
-    margin-left: 4.8em !important;
-  }
-  body > div > div > div.box-10 > div.recently-cards.card-middle.margin > button {
-    margin-left: 5em !important;
+  .box-10 button {
+    margin-left: 0 !important;
   }
   .box-10 .card-middle {
     height: 25em !important;
@@ -1377,6 +1433,9 @@ body {
   }
   .box-22 form {
     padding-top: 0.3em;
+  }
+  .box-22 input {
+    width: 96%;
   }
   .box-23 {
     grid-column: 1 / 6;
