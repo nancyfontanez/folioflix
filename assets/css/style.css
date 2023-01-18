@@ -394,9 +394,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     width: 33.33333%;
     padding: 0 15px;
 }
-.portfolio-img-con .filterDiv:nth-child(3) {
-    padding: 0;
-}
+
 .portfolio-img-con .filterDiv:last-child {
     margin-bottom: 120px;
 }
