@@ -119,6 +119,9 @@ hr {
     background-color: var(--primary);
     color: var(--secondary);
 }
+.featuredButtonOne {
+    padding: 15px 107px 10px;
+}
 .featuredButtonTwo {
     padding: 15px 6px 10px;
 }
