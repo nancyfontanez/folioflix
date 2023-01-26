@@ -240,7 +240,8 @@
         font-size: 14px;
     }
     #button{
-        left: 30px;
+        left: 10px;
+        bottom: 10px;
     }
     .skill-con::before {
         width: 42px;
