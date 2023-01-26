@@ -240,7 +240,7 @@
         font-size: 14px;
     }
     #button{
-        right: 30px;
+        left: 30px;
     }
     .skill-con::before {
         width: 42px;
@@ -401,8 +401,21 @@
         padding: 16px 48px;
         font-size: 16px;
     }
+    .generic-btn a:hover{
+        border-color: var(--accent);
+        background: var(--accent);
+    }
+    
+    .generic-btn a{
+        background: var(--light-purple-color);
+    }
     .See-btn {
         font-size: 16px;
+        border-bottom: 2px solid var(--accent);
+        color: var(--accent);
+    }
+    .See-btn:hover{
+        color: var(--light-purple-color);
     }
     .generic-title {
         margin-bottom: 24px;
