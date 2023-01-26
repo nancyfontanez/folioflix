@@ -159,7 +159,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     position: absolute;
     top: 25%;
     z-index: 1;
-    background: url(../image/curn-icon.png) no-repeat top left;
+    /* background: url(../image/curn-icon.png) no-repeat top left; */
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite  alternate;
 }
@@ -170,7 +170,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     position: absolute;
     bottom:100px;
     right: -2%;
-    background: url(../image/triangle-icon.png) no-repeat top left;
+    /* background: url(../image/triangle-icon.png) no-repeat top left; */
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 2s infinite  alternate;
 }
@@ -181,7 +181,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     position: absolute;
     top: -131px;
     left: 0;
-    background: url(../image/half-circle.png) no-repeat top left;
+    /* background: url(../image/half-circle.png) no-repeat top left; */
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1.5s infinite  alternate;
 }
@@ -193,6 +193,27 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
 .banner-social-icon ul li a i{
     width: 48px !important;
     height: 48px !important;
+}
+.contact-nav a{
+    background: var(--light-purple-color);
+    color: var(--white-color);
+    padding: 16px 43px 15px;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 35px;
+    line-height: 20px;
+    text-decoration: none;
+    box-shadow: 0 0 85px 0 #e9eefc;
+    border: 1px solid transparent;
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.contact-nav a:hover,
+.generic-btn a:hover{
+    border-color: var(--accent);
+    background: var(--accent);
+    transform: translateY(-8px);
 }
 /***** navbar banner css****/
 /***** service section css****/
@@ -224,7 +245,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     position: absolute;
     top: 154px;
     left: 72px;
-    background: url(../image/half-circle-left-icon.png) no-repeat top left;
+    /* background: url(../image/half-circle-left-icon.png) no-repeat top left; */
     animation: mover 1s infinite alternate;
     -webkit-animation: mover 1s infinite alternate;
 }
@@ -235,7 +256,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     position: absolute;
     bottom: 190px;
     right: -116px;
-    background: url(../image/corn-left-icon.png) no-repeat top left;
+    /* background: url(../image/corn-left-icon.png) no-repeat top left; */
     animation: mover 1s infinite alternate;
     -webkit-animation: mover 1s infinite alternate;
 }
@@ -467,7 +488,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     position: absolute;
     bottom: 64px;
     right: -116px;
-    background: url(../image/corn-left-icon.png) no-repeat top left;
+    /* background: url(../image/corn-left-icon.png) no-repeat top left; */
     animation: mover 1s infinite alternate;
     -webkit-animation: mover 1s infinite alternate;
 }
@@ -499,7 +520,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     position: absolute;
     top: 154px;
     right:72px;
-    background: url(../image/half-circle-right-icon.png) no-repeat top left;
+    /* background: url(../image/half-circle-right-icon.png) no-repeat top left; */
     animation: mover 1s infinite alternate;
     -webkit-animation: mover 1s infinite alternate;
 }
@@ -510,7 +531,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     position: absolute;
     bottom: 26px;
     left: -116px;
-    background: url(../image/triangle-icon.png) no-repeat top left;
+    /* background: url(../image/triangle-icon.png) no-repeat top left; */
     -webkit-animation: mover 1s infinite alternate;
     animation: mover 1s infinite alternate;
 }
@@ -767,7 +788,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     position: absolute;
     bottom: 26px;
     left: -116px;
-    background: url(../image/triangle-icon.png) no-repeat top left;
+    /* background: url(../image/triangle-icon.png) no-repeat top left; */
     animation: mover 1s infinite alternate;
     -webkit-animation: mover 1s infinite alternate;
 }
@@ -792,7 +813,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     position: absolute;
     top: 154px;
     right: 72px;
-    background: url(../image/half-circle-right-icon.png) no-repeat top left;
+    /* background: url(../image/half-circle-right-icon.png) no-repeat top left; */
     animation: mover 1s infinite alternate;
     -webkit-animation: mover 1s infinite alternate;
 }
@@ -899,7 +920,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     position: absolute;
     bottom: 140px;
     right: -116px;
-    background: url(../image/corn-left-icon.png) no-repeat top left;
+    /* background: url(../image/corn-left-icon.png) no-repeat top left; */
     animation: mover 1s infinite alternate;
     -webkit-animation: mover 1s infinite alternate;
 }
@@ -1117,7 +1138,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     border-radius: 50%;
     position: fixed;
     bottom: 57px;
-    right: 113px;
+    left: 113px;
     transition: background-color .3s, 
       opacity .5s, visibility .5s;
     opacity: 0;
@@ -1429,9 +1450,9 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
 }
 .profile-picture {
     border-radius: 1em;
-    border: 1px solid #6f34fe;
+    /* border: 1px solid #6f34fe; */
     height: 750px;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 .about-pictures {
     border-radius: 50%;
@@ -1441,5 +1462,5 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
 }
 .portfolio-pictures {
     border-radius: 1em;
-    border: 1px solid #6f34fe;
+    border: 1px solid #fca61f
 }
