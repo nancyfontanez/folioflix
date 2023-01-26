@@ -1137,7 +1137,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     border-radius: 50%;
     position: fixed;
     bottom: 35px;
-    left: 113px;
+    left: 30px;
     transition: background-color .3s, 
       opacity .5s, visibility .5s;
     opacity: 0;
