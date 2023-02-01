@@ -107,6 +107,14 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
 .See-btn:hover{
     color: var(--accent);
 }
+.View-btn{
+    text-decoration: none;
+    line-height: 20px;
+    color: var(--accent);
+}
+.View-btn:hover{
+    color: var(--light-purple-color);
+}
 .banner-con a{
     text-decoration: none;
 }
