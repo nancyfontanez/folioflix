@@ -85,11 +85,13 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
 .banner-heading h2{
     color: var(--primary-color);
     font-weight: 600;
+    font-size: 50px;
 }
 .banner-heading h1{
     font-weight: 700;
     color: var(--light-purple-color);
     margin-bottom: 6px;
+    font-size: 75px;
 }
 .banner-heading p{
     color: var(--text-color);
@@ -1453,9 +1455,9 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
 .blog-content .footer-social-icon ul li a .fab.fa-twitter:hover{
     background-color: #255afc;
 }
-.banner-right-con img[alt="banner-right-img"]{
+/* .banner-right-con img[alt="banner-right-img"]{
     animation: right-mover 1s ease-in-out infinite alternate;
-}
+} */
 .blog-model-con p{
     margin-bottom: 60px !important;
 }
@@ -1464,6 +1466,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     /* border: 1px solid #6f34fe; */
     height: 750px;
     margin-left: 25px;
+    margin-bottom: 70px;
 }
 .about-pictures {
     border-radius: 50%;
